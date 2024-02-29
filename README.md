@@ -10,13 +10,13 @@ Code source:
 #Convert the query results from your precipitation analysis to a dictionary
 #Use date as key, prcp as value. (ChatGPT, personal communication, February 27, 2024)
     precipitation_dictonary = {date: prcp for date, prcp in precipitation_data}
-
-
-# Define the database URL as a configuration variable (ChatGPT, personal communication, February 27, 2024)
+    
+    # Define the database URL as a configuration variable (ChatGPT, personal communication, February 27, 2024)
 app.config['DATABASE_URL'] = 'sqlite:///hawaii.sqlite'
 
-# Get the database URL from the app configuration (ChatGPT, personal communication, February 27, 2024)
-database_url = app.config['DATABASE_URL']
+#Get the database URL from the app configuration (ChatGPT, personal communication, February 27, 2024)
+database_url = app.config['DATABASE_URL')
 
-# Create SQLAlchemy engine using the database URL (ChatGPT, personal communication, February 27, 2024)
+#Create SQLAlchemy engine using the database URL (ChatGPT, personal communication, February 27, 2024)
 engine = create_engine(app.config['DATABASE_URL'])
+
